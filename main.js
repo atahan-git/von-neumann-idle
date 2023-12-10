@@ -244,7 +244,7 @@ function setHandCraftItem(itemName) {
     // }
 }
 
-var handcraftStrength = 20;
+var handcraftStrength = 25;
 function handcraftItem (itemName){
     var itemData = getItemData(itemName);
     var curCraftSteps = craftSteps(itemName);
