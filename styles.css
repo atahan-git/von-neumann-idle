@@ -117,15 +117,21 @@ progress {
 
 .recipe-ingredient-output,
 .recipe-ingredient-mined,
+.recipe-ingredient-notenough,
 .recipe-ingredient {
     padding: 3px;
+    margin: 2px;
     border: 1px solid black;
 }
-
 
 .recipe-ingredient-mined {
     border: 1px solid grey;
     color : grey;
+}
+
+.recipe-ingredient-notenough {
+    border: 1px solid darkred;
+    color : darkred;
 }
 
 
@@ -142,9 +148,16 @@ progress {
 }
 
 .craft-buttons {
+    display: flex; 
+    justify-content: space-between;
     align-items: center;
     margin-top: 10px;
 }
+
+.storage-zone{
+    margin-right: 10px;
+}
+
 
 
 .crafting-info {
