@@ -1,0 +1,33 @@
+﻿.gold-mined {
+    color: red;
+}
+
+
+body { /* no . means element type */
+    text-align: center; /* text-align centers text AND children */
+}
+
+* { /* * applies to all elements, use with caution */
+    outline: none;
+}
+
+
+
+.essay_body {
+    margin-top: 105px;
+    padding: 150px 80px 100px 80px;
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(0, 0, 0, 0.10);
+    /*box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 0px inset, rgba(0, 0, 0, 0.07) 0px -1px 0px inset;*/
+    border: none;
+    font-size: 14px;
+    line-height: 28px;
+    font-family: times, serif;
+    min-height: 900px;
+    margin-bottom: 50px;
+    text-indent: 50px;
+    resize: none;
+}
