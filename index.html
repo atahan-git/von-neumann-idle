@@ -5,18 +5,41 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Minerva Idle</title>
+    <title>Von Neumann Idle</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <p id="goldMined" class="gold-mined">0 Gold Mined</p>
-    <button onclick="mineGold()">Mine Gold</button>
-    <button onclick="buyGoldPerClick()" id="perClickUpgrade">Upgrade Pickaxe (Currently Level 1) Cost: 10 Gold</button>
+    <ul class="tabs">
+        <li class="tab" id="planetTab" onclick="openTab('planet')">Planet</li>
+        <li class="tab" id="starsystemTab" onclick="openTab('starsystem')">Star System</li>
+        <li class="tab" id="galaxyTab" onclick="openTab('galaxy')">Galaxy</li>
+    </ul>
 
+    <div id="planet" class="content active">
+        <h2>Planet Information</h2>
+        <div id="planetItemsContainer"></div>
+    </div>
 
-    <textarea id="essay_body" class="essay_body">&nbsp;</textarea>
-    
+    <div id="starsystem" class="content">
+        <h2>Star System Information</h2>
+        <p>This is information about a star system.</p>
+    </div>
+
+    <div id="galaxy" class="content">
+        <h2>Galaxy Information</h2>
+        <p>This is information about a galaxy.</p>
+    </div>
+
+    <div class="craft-section">
+        <h2>Crafting Items</h2>
+
+        <div id="craftItemsContainer"></div>
+    </div>
+
+    <button onclick="resetSave()">Reset Save</button>
+
     <script src="main.js" charset="utf-8" type="text/javascript"></script>
 </body>
 </html>

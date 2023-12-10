@@ -31,3 +31,133 @@ body { /* no . means element type */
     text-indent: 50px;
     resize: none;
 }
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.tabs {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.tab:hover {
+    background-color: #e0e0e0;
+}
+
+.content {
+    display: none;
+    padding: 20px;
+}
+
+.content.active {
+    display: block;
+}
+
+.number-display {
+    margin-right: 10px;
+    font-weight: bold;
+    text-align: right; /* Align the number display to the right */
+}
+
+.ore-number-display {
+    margin-right: 10px;
+    font-weight: bold;
+    text-align: right; /* Align the number display to the right */
+}
+
+.craft-item {
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid black; /* Add this line for a black outline */
+    padding: 10px; /* Optional: Add padding for better appearance */
+}
+
+.mined-item {
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid black; /* Add this line for a black outline */
+    padding: 10px; /* Optional: Add padding for better appearance */
+}
+
+
+h3 {
+    margin: 0; /* Remove default margin for h3 */
+    text-align: left; /* Align item names to the left */
+}
+
+
+
+.crafter {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+progress {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 80%;
+}
+
+.crafting{
+    margin-top: 10px;
+}
+
+.recipe-ingredient-output,
+.recipe-ingredient-mined,
+.recipe-ingredient {
+    padding: 3px;
+    border: 1px solid black;
+}
+
+
+.recipe-ingredient-mined {
+    border: 1px solid grey;
+    color : grey;
+}
+
+
+.handcraft-button{
+    /* float : left; */
+    margin-right: 10px;
+}
+
+.item-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline; /* Align the items baseline to keep them on the same line */
+    margin-bottom: 10px;
+}
+
+.craft-buttons {
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.crafting-info {
+    display: flex; 
+    justify-content: space-between; /* Align the items baseline to keep them on the same line */
+    margin-top: 10px;
+}
+
+.recipe-ingredients{
+    /* float: right; */
+    align-items: center;
+}
+
+.crafting-progress {
+    margin-top: 10px;
+}
