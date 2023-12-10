@@ -128,7 +128,7 @@ function checkUnlocks (){
     }
     if(!gameData.unlockedChest){
         if(getItemData('Chest').amount > 0){
-            gameData.unlockedCrafter = true;
+            gameData.unlockedChest = true;
             setUnlockState();
         }
     }
@@ -187,7 +187,6 @@ window.addEventListener('beforeunload', function (event) {
     saveData();
     event.returnValue = ''; // Standard for most browsers
   });
-
 
 
 function openTab(tabName) {
