@@ -496,8 +496,8 @@ const craftingRecipes = {
 
     'Crafter' :{
         ingredients : {
-            'Chips' : 4,
-            'Iron' : 4,
+            'Chips' : 2,
+            'Iron' : 8,
             'Copper' : 4,
         },
         output : 1,
